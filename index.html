@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Costiq – Clear Product Comparison</title>
-  <meta name="description" content="Costiq helps users compare everyday products sold online using neutral, structured criteria for faster and more confident buying decisions.">
+  <title>Costiq – Independent Product Comparison</title>
+  <meta name="description" content="Costiq helps users compare everyday products sold online using neutral, structured criteria for confident buying decisions.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -17,7 +17,6 @@
       --accent-dark: #003f86;
       --soft-blue: #eef4ff;
       --soft-green: #edf6f0;
-      --soft-gray: #fafbfc;
     }
 
     * { box-sizing: border-box; }
@@ -31,12 +30,11 @@
     }
 
     .wrapper {
-      max-width: 1320px;
+      max-width: 1280px;
       margin: auto;
-      padding: 26px 18px 100px;
+      padding: 28px 18px 90px;
     }
 
-    /* HEADER */
     header {
       background: var(--bg);
       border: 1px solid var(--border);
@@ -46,7 +44,7 @@
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 2.6rem;
       margin: 0 0 12px;
     }
 
@@ -56,28 +54,10 @@
       font-size: 1.05rem;
     }
 
-    .header-meta {
-      margin-top: 16px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    .meta-chip {
-      background: var(--soft-gray);
-      border: 1px solid var(--border);
-      padding: 6px 12px;
-      border-radius: 20px;
-    }
-
-    section {
-      margin-bottom: 64px;
-    }
+    section { margin-bottom: 64px; }
 
     h2 {
-      font-size: 1.75rem;
+      font-size: 1.7rem;
       margin-bottom: 16px;
       padding-bottom: 6px;
       border-bottom: 2px solid var(--border);
@@ -88,63 +68,7 @@
       margin-bottom: 6px;
     }
 
-    p.meta {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-top: -6px;
-    }
-
     ul { padding-left: 20px; }
-
-    /* PRINCIPLES */
-    .principles {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 26px;
-      margin-top: 22px;
-    }
-
-    .principle {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      padding: 26px;
-      border-radius: 14px;
-    }
-
-    /* DECISION GUIDANCE */
-    .decision-guide {
-      background: var(--soft-green);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 26px;
-      font-size: 0.95rem;
-    }
-
-    /* TABLE */
-    .table-wrap {
-      overflow-x: auto;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      background: var(--bg);
-      margin-top: 26px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.95rem;
-    }
-
-    th, td {
-      padding: 16px;
-      border-bottom: 1px solid var(--border);
-      text-align: left;
-    }
-
-    th {
-      background: var(--soft-gray);
-      font-weight: 600;
-    }
 
     /* PRODUCT GRID */
     .comparison-grid {
@@ -168,6 +92,16 @@
       background: #fbfdff;
     }
 
+    /* PRODUCT IMAGE */
+    .product-img {
+      width: 100%;
+      max-width: 220px;
+      height: 220px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 16px;
+    }
+
     .badge {
       background: var(--soft-blue);
       color: #003f86;
@@ -175,7 +109,7 @@
       padding: 6px 14px;
       border-radius: 999px;
       width: fit-content;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .features {
@@ -198,9 +132,7 @@
       text-align: center;
     }
 
-    .btn:hover {
-      background: var(--accent-dark);
-    }
+    .btn:hover { background: var(--accent-dark); }
 
     .note {
       font-size: 0.9rem;
@@ -229,135 +161,67 @@
     <header>
       <h1>Costiq</h1>
       <p>
-        Costiq is an independent product comparison platform designed to reduce
-        confusion during online shopping. We organize and explain differences
-        between similar products so users can decide faster and with confidence.
+        Costiq is an independent product comparison platform designed to help users
+        make clear and confident buying decisions. We explain differences.
+        We do not sell products.
       </p>
-
-      <div class="header-meta">
-        <span class="meta-chip">Independent comparisons</span>
-        <span class="meta-chip">No sponsored rankings</span>
-        <span class="meta-chip">Regularly reviewed</span>
-      </div>
     </header>
 
-    <!-- PRINCIPLES -->
+    <!-- PRODUCT COMPARISON -->
     <section>
-      <h2>How Costiq works</h2>
-      <div class="principles">
-        <div class="principle">
-          <h3>Structured selection</h3>
-          <p>Products are grouped only when users commonly compare them.</p>
-        </div>
-        <div class="principle">
-          <h3>Decision clarity</h3>
-          <p>Each option includes who it is best suited for and why.</p>
-        </div>
-        <div class="principle">
-          <h3>Minimal bias</h3>
-          <p>Affiliate relationships do not influence ordering or labels.</p>
-        </div>
-      </div>
-    </section>
+      <h2>Product comparison</h2>
 
-    <!-- AUDIENCE -->
-    <section>
-      <h2>Is this comparison useful for you?</h2>
-      <ul>
-        <li>You are choosing between similar everyday products</li>
-        <li>You want quick clarity without marketing language</li>
-      </ul>
-
-      <h3>Skip this if</h3>
-      <ul>
-        <li>You already know the exact model you want</li>
-        <li>You need premium or niche-specific features</li>
-      </ul>
-    </section>
-
-    <!-- DECISION GUIDE -->
-    <section>
-      <h2>Quick decision guidance</h2>
-      <div class="decision-guide">
-        If you want a reliable, low-risk choice without comparing every detail,
-        <strong>Product A</strong> fits most users.
-        Choose other options only if their specific differences matter to you.
-      </div>
-    </section>
-
-    <!-- TABLE -->
-    <section>
-      <h2>At-a-glance comparison</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Product</th>
-              <th>Best suited for</th>
-              <th>Primary distinction</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>PRODUCT NAME A</td>
-              <td>Most users</td>
-              <td>Balanced everyday choice</td>
-            </tr>
-            <tr>
-              <td>PRODUCT NAME B</td>
-              <td>Lightweight preference</td>
-              <td>Simpler build focus</td>
-            </tr>
-            <tr>
-              <td>PRODUCT NAME C</td>
-              <td>Alternative design</td>
-              <td>Different form factor</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="meta">Last updated: March 2026</p>
-    </section>
-
-    <!-- PRODUCT CARDS -->
-    <section>
-      <h2>Detailed comparison</h2>
       <div class="comparison-grid">
 
+        <!-- PRODUCT A -->
         <div class="product-card primary">
+          <img src="product-a.jpg" alt="PRODUCT NAME A" class="product-img">
+
           <span class="badge">Best for most users</span>
           <h3>PRODUCT NAME A</h3>
+
           <div class="features">
             • Feature 1<br>
             • Feature 2<br>
             • Feature 3
           </div>
+
           <a class="btn" href="AMAZON_AFFILIATE_LINK_A" target="_blank" rel="nofollow sponsored">
             View on Amazon
           </a>
         </div>
 
+        <!-- PRODUCT B -->
         <div class="product-card">
+          <img src="product-b.jpg" alt="PRODUCT NAME B" class="product-img">
+
           <span class="badge">Lightweight option</span>
           <h3>PRODUCT NAME B</h3>
+
           <div class="features">
             • Feature 1<br>
             • Feature 2<br>
             • Feature 3
           </div>
+
           <a class="btn" href="AMAZON_AFFILIATE_LINK_B" target="_blank" rel="nofollow sponsored">
             View on Amazon
           </a>
         </div>
 
+        <!-- PRODUCT C -->
         <div class="product-card">
+          <img src="product-c.jpg" alt="PRODUCT NAME C" class="product-img">
+
           <span class="badge">Alternative design</span>
           <h3>PRODUCT NAME C</h3>
+
           <div class="features">
             • Feature 1<br>
             • Feature 2<br>
             • Feature 3
           </div>
+
           <a class="btn" href="AMAZON_AFFILIATE_LINK_C" target="_blank" rel="nofollow sponsored">
             View on Amazon
           </a>
@@ -367,15 +231,6 @@
 
       <p class="note">
         Prices and availability are subject to change. Final pricing is shown on the seller’s website.
-      </p>
-    </section>
-
-    <!-- STANDARDS -->
-    <section>
-      <h2>Editorial standards</h2>
-      <p class="note">
-        Costiq follows a neutral editorial process. Product inclusion does not imply endorsement.
-        Content is reviewed periodically to ensure accuracy and relevance.
       </p>
     </section>
 
