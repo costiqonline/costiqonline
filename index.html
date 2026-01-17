@@ -3,37 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Costiq – Independent Product Comparison</title>
-  <meta name="description" content="Costiq is an independent product comparison platform that helps users evaluate everyday products sold online using transparent, neutral criteria.">
+  <meta name="description" content="Costiq is an independent product comparison platform helping users evaluate everyday products sold online using transparent, factual criteria.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     :root {
       --bg: #ffffff;
-      --page: #f4f6f8;
-      --text: #1b1b1b;
+      --page: #f3f5f7;
+      --text: #1a1a1a;
       --muted: #555;
-      --border: #e3e6ea;
+      --border: #e2e6ea;
       --accent: #0057b8;
       --accent-dark: #003f86;
-      --card: #ffffff;
+      --highlight: #f0f6ff;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       background: var(--page);
       color: var(--text);
       line-height: 1.65;
     }
 
     .wrapper {
-      max-width: 1100px;
+      max-width: 1120px;
       margin: auto;
-      padding: 28px 18px 60px;
+      padding: 28px 18px 70px;
     }
 
     header {
@@ -41,12 +39,12 @@
     }
 
     header h1 {
-      font-size: 2.3rem;
+      font-size: 2.4rem;
       margin: 0 0 10px;
     }
 
     header p {
-      max-width: 780px;
+      max-width: 820px;
       color: var(--muted);
       font-size: 1.05rem;
     }
@@ -56,14 +54,14 @@
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.55rem;
       margin-bottom: 12px;
       padding-bottom: 6px;
       border-bottom: 2px solid var(--border);
     }
 
     h3 {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       margin-bottom: 6px;
     }
 
@@ -73,9 +71,7 @@
       margin-top: -4px;
     }
 
-    ul {
-      padding-left: 20px;
-    }
+    ul { padding-left: 20px; }
 
     .principles {
       display: grid;
@@ -91,6 +87,41 @@
       border-radius: 6px;
     }
 
+    .quick-table {
+      overflow-x: auto;
+      margin-top: 18px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+
+    th {
+      background: #fafbfc;
+      font-weight: 600;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--highlight);
+      color: #003f86;
+      font-size: 0.8rem;
+      padding: 3px 8px;
+      border-radius: 12px;
+      margin-top: 6px;
+    }
+
     .comparison-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -99,7 +130,7 @@
     }
 
     .product-card {
-      background: var(--card);
+      background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 8px;
       padding: 20px;
@@ -108,8 +139,9 @@
       justify-content: space-between;
     }
 
-    .product-card h3 {
-      margin-top: 0;
+    .product-card.highlighted {
+      border: 2px solid var(--accent);
+      background: #fbfdff;
     }
 
     .features {
@@ -119,7 +151,6 @@
     }
 
     .cta {
-      text-align: center;
       margin-top: auto;
     }
 
@@ -133,11 +164,10 @@
       border-radius: 6px;
       font-size: 0.95rem;
       font-weight: 500;
+      text-align: center;
     }
 
-    .btn:hover {
-      background: var(--accent-dark);
-    }
+    .btn:hover { background: var(--accent-dark); }
 
     .note {
       font-size: 0.9rem;
@@ -153,14 +183,8 @@
       color: var(--muted);
     }
 
-    footer p {
-      margin: 6px 0;
-    }
-
     @media (max-width: 640px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
+      header h1 { font-size: 1.9rem; }
     }
   </style>
 </head>
@@ -172,36 +196,27 @@
     <header>
       <h1>Costiq</h1>
       <p>
-        Costiq is an independent product comparison platform built to help users
-        evaluate everyday products sold online using clear, factual, and transparent criteria.
-        We do not sell products. We help you decide.
+        Costiq is an independent product comparison platform built to help users evaluate
+        everyday products sold online using transparent, factual criteria.
+        We do not sell products. We help users make informed decisions.
       </p>
     </header>
 
-    <!-- METHODOLOGY -->
+    <!-- PRINCIPLES -->
     <section>
       <h2>Our comparison principles</h2>
-
       <div class="principles">
         <div class="principle">
           <h3>Independence</h3>
-          <p>
-            Products are selected based on relevance and availability, not brand relationships.
-          </p>
+          <p>Products are selected based on relevance and availability, not brand relationships.</p>
         </div>
-
         <div class="principle">
           <h3>Transparency</h3>
-          <p>
-            We clearly explain why products are included and who they are suitable for.
-          </p>
+          <p>We clearly explain why products are included and who they are suitable for.</p>
         </div>
-
         <div class="principle">
           <h3>Practical focus</h3>
-          <p>
-            Comparisons are designed for everyday buying decisions, not marketing claims.
-          </p>
+          <p>Comparisons are designed for everyday buying decisions, not marketing claims.</p>
         </div>
       </div>
     </section>
@@ -221,15 +236,51 @@
       </ul>
     </section>
 
-    <!-- COMPARISON -->
+    <!-- QUICK COMPARISON -->
     <section>
-      <h2>Product comparison</h2>
+      <h2>Quick comparison overview</h2>
+
+      <div class="quick-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Primary use</th>
+              <th>Key difference</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PRODUCT NAME A</td>
+              <td>Daily general use</td>
+              <td>Balanced, no-frills option</td>
+            </tr>
+            <tr>
+              <td>PRODUCT NAME B</td>
+              <td>Lightweight preference</td>
+              <td>Simpler build focus</td>
+            </tr>
+            <tr>
+              <td>PRODUCT NAME C</td>
+              <td>Alternative design</td>
+              <td>Different cable or form factor</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <p class="meta">Last updated: March 2026</p>
+    </section>
+
+    <!-- PRODUCT CARDS -->
+    <section>
+      <h2>Detailed comparison</h2>
 
       <div class="comparison-grid">
 
-        <div class="product-card">
+        <div class="product-card highlighted">
           <h3>PRODUCT NAME A</h3>
+          <span class="tag">Good for most users</span>
           <div class="features">
             • Feature 1<br>
             • Feature 2<br>
@@ -244,6 +295,7 @@
 
         <div class="product-card">
           <h3>PRODUCT NAME B</h3>
+          <span class="tag">Lightweight option</span>
           <div class="features">
             • Feature 1<br>
             • Feature 2<br>
@@ -258,6 +310,7 @@
 
         <div class="product-card">
           <h3>PRODUCT NAME C</h3>
+          <span class="tag">Alternative design</span>
           <div class="features">
             • Feature 1<br>
             • Feature 2<br>
@@ -277,12 +330,22 @@
       </p>
     </section>
 
+    <!-- EDITORIAL STANDARDS -->
+    <section>
+      <h2>Editorial standards</h2>
+      <p class="note">
+        Costiq follows a neutral editorial process. Product inclusion does not guarantee
+        recommendation. Affiliate relationships do not influence comparison outcomes.
+        Information is reviewed periodically for relevance and accuracy.
+      </p>
+    </section>
+
     <!-- DISCLOSURE -->
     <section>
       <h2>Affiliate disclosure</h2>
       <p class="note">
         Costiq participates in affiliate programs. As an Amazon Associate, we earn from qualifying purchases.
-        This does not influence our comparisons or affect the price you pay.
+        This does not affect the price you pay or how products are evaluated.
       </p>
     </section>
 
