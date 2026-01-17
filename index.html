@@ -1,83 +1,185 @@
-<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Costiq – Online Price Comparison</title>
+  <meta name="description" content="Costiq helps users compare commonly purchased products sold online so they can make informed buying decisions.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h2>Product Comparison</h2>
-<p>
-This page provides an informational comparison to help users choose between commonly purchased options.
-</p>
-<p><strong>Last updated:</strong> March 2026</p>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #222;
+    }
 
-<h3>How products are selected</h3>
-<ul>
-  <li>Marketplace availability</li>
-  <li>Common usage patterns</li>
-  <li>Basic feature differences</li>
-</ul>
-<p>No product is suitable for everyone.</p>
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 24px;
+      background-color: #ffffff;
+    }
 
-<h3>Who this is for</h3>
-<ul>
-  <li>Users looking for basic, daily-use products</li>
-  <li>Users comparing similar options before purchase</li>
-</ul>
+    h1, h2, h3 {
+      color: #111;
+    }
 
-<h3>Who this is not for</h3>
-<ul>
-  <li>Users seeking premium or specialized features</li>
-  <li>Users requiring professional-grade performance</li>
-</ul>
+    h1 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
 
-<hr>
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 30px 0;
+    }
 
-<h3>Option A</h3>
-<p>
-<strong>PRODUCT NAME A</strong><br>
-• Feature 1<br>
-• Feature 2<br>
-• Feature 3
-</p>
-<p>
-<a href="AMAZON_AFFILIATE_LINK_A" target="_blank" rel="nofollow sponsored">
-Buy on Amazon
-</a>
-</p>
+    ul {
+      padding-left: 20px;
+    }
 
-<h3>Option B</h3>
-<p>
-<strong>PRODUCT NAME B</strong><br>
-• Feature 1<br>
-• Feature 2<br>
-• Feature 3
-</p>
-<p>
-<a href="AMAZON_AFFILIATE_LINK_B" target="_blank" rel="nofollow sponsored">
-Buy on Amazon
-</a>
-</p>
+    .note {
+      font-size: 0.95em;
+      color: #555;
+    }
 
-<h3>Option C</h3>
-<p>
-<strong>PRODUCT NAME C</strong><br>
-• Feature 1<br>
-• Feature 2<br>
-• Feature 3
-</p>
-<p>
-<a href="AMAZON_AFFILIATE_LINK_C" target="_blank" rel="nofollow sponsored">
-Buy on Amazon
-</a>
-</p>
+    .buy-btn {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 10px 14px;
+      background-color: #0073e6;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
 
-<h3>How to choose</h3>
-<ul>
-  <li>Choose Option A for basic requirements.</li>
-  <li>Choose Option B for specific feature preference.</li>
-  <li>Choose Option C for alternative design or use case.</li>
-</ul>
+    .buy-btn:hover {
+      background-color: #005bb5;
+    }
 
-<p>
-These options fall within a similar category and are commonly considered together.
-</p>
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
 
-<p>
-<em>Prices and availability are subject to change. Final price is shown on Amazon.</em>
-</p>
+<body>
+  <div class="container">
+
+    <h1>Costiq</h1>
+
+    <p>
+      Costiq is an informational website created to help users compare commonly purchased products
+      sold on online marketplaces. The goal is to provide clear, neutral information so buyers can
+      make informed decisions before purchasing.
+    </p>
+
+    <h2>How this website works</h2>
+    <ul>
+      <li>Products are grouped by common use cases</li>
+      <li>Basic features are compared side by side</li>
+      <li>Users are redirected to the seller’s website to complete the purchase</li>
+    </ul>
+
+    <hr>
+
+    <h2>Product Comparison</h2>
+    <p class="note">
+      Last updated: March 2026
+    </p>
+
+    <h3>How products are selected</h3>
+    <ul>
+      <li>Availability on the marketplace</li>
+      <li>Popularity among everyday users</li>
+      <li>Clear differences in basic features</li>
+    </ul>
+
+    <p class="note">
+      No product listed here is guaranteed to be suitable for everyone.
+    </p>
+
+    <h3>Who this comparison is for</h3>
+    <ul>
+      <li>Users looking for basic, daily-use products</li>
+      <li>Users comparing similar options before buying</li>
+    </ul>
+
+    <h3>Who this comparison is not for</h3>
+    <ul>
+      <li>Users seeking premium or professional-grade features</li>
+      <li>Users requiring specialized performance</li>
+    </ul>
+
+    <hr>
+
+    <h3>Option A</h3>
+    <p>
+      <strong>PRODUCT NAME A</strong><br>
+      • Feature 1<br>
+      • Feature 2<br>
+      • Feature 3
+    </p>
+    <a class="buy-btn" href="AMAZON_AFFILIATE_LINK_A" target="_blank" rel="nofollow sponsored">
+      View on Amazon
+    </a>
+
+    <h3>Option B</h3>
+    <p>
+      <strong>PRODUCT NAME B</strong><br>
+      • Feature 1<br>
+      • Feature 2<br>
+      • Feature 3
+    </p>
+    <a class="buy-btn" href="AMAZON_AFFILIATE_LINK_B" target="_blank" rel="nofollow sponsored">
+      View on Amazon
+    </a>
+
+    <h3>Option C</h3>
+    <p>
+      <strong>PRODUCT NAME C</strong><br>
+      • Feature 1<br>
+      • Feature 2<br>
+      • Feature 3
+    </p>
+    <a class="buy-btn" href="AMAZON_AFFILIATE_LINK_C" target="_blank" rel="nofollow sponsored">
+      View on Amazon
+    </a>
+
+    <h3>How to choose</h3>
+    <ul>
+      <li>Choose Option A for basic requirements</li>
+      <li>Choose Option B for a specific feature preference</li>
+      <li>Choose Option C for an alternative design or usage pattern</li>
+    </ul>
+
+    <p class="note">
+      Prices and availability are subject to change. Final pricing is shown on Amazon.
+    </p>
+
+    <hr>
+
+    <h2>Affiliate Disclosure</h2>
+    <p class="note">
+      This website contains affiliate links. As an Amazon Associate, Costiq earns from qualifying purchases.
+      This does not affect the price you pay.
+    </p>
+
+    <footer>
+      <p>
+        Contact: support@costiq.site
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
